@@ -1,0 +1,82 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* global style  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  padding: 0rem 3.5rem;
+  line-height: 1.4rem;
+}
+h2{
+  font-family: 'Raleway', sans-serif;
+  line-height: 4rem;
+  font-size: 2.5rem;
+
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  /* Primary */
+
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+
+  /* Accent */
+
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+
+  /* Neutral */
+
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+}
+
+/* project css */
+.header{
+  margin-top: 3.5rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-right{
+  display: flex;
+  gap: 2.5rem;
+}
+
+.container{
+  width: 100%;
+}
+
+.card-1{
+  display: flex;
+  
+}
+.card-1 .primary-part{
+  /* width: 50%; */
+}
+.card-1 img{
+  width: 50%;
+}
