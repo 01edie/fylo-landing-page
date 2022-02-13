@@ -189,6 +189,7 @@ a {
 }
 .link-work-hr{
   width: 100%;
+  color: var(--Moderate-Cyan);
   
 }
 .arrow{
@@ -381,6 +382,9 @@ a {
 }
 .review .review-author img{
   padding: 0;
+}
+.author-details{
+  text-align: left;
 }
 .early-access{
   flex-direction: column;
