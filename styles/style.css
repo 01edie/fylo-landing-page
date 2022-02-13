@@ -1,6 +1,6 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 /* global style  */
 *{
@@ -83,7 +83,7 @@ a {
   margin-bottom: 5rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 .card-1 .primary-part{
   display: flex;
@@ -91,7 +91,8 @@ a {
   gap: 1.5rem;
 }
 .card-1 img{
-  width: 50%;
+  width: 45%;
+  /* padding-top: 3rem; */
 }
 .card-1 form{
   display: flex;
@@ -101,34 +102,190 @@ a {
   border: 1px solid var(--Desaturated-Blue);
   height: 2.75rem;
   width: 20rem;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  padding: 0rem 1.5rem;
-}
-.get-started button{
-
-  color: white;
-  background-color: var(--Bright-Blue);
-  border: none;
-  height: 2.75rem;
-  width: 12.5rem;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  padding: 0rem 1.5rem;
+}
+.get-started button{
+  color: white;
+  background-color: var(--Bright-Blue);
+  border: none;
+  height: 2.75rem;
+  width: 12.5rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   font-size: 1rem;
-  /* font-weight: 500; */
-  box-shadow:  2px 4px 8px 1px rgba(93, 120, 240, 0.3);
+  /*font-weight: 500;
+  */box-shadow:  2px 4px 8px 1px rgba(93, 120, 240, 0.3);
 }
 
+.card-2{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
 .card-2 .primary-part{
-  background-color: hsl(250, 75%, 98%);
+  width: 100%;
+  background-color: #f9f8fe;
+  padding: 3rem 3.5rem 6rem 3.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .card-2-mobile-bg{
   display: none;
 }
+.card-2 .primary-part img{
+  width: 40%;
+}
+
+.card-2 .primary-part .part-1{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card-2 .primary-part .part-1 h2{
+  margin-bottom: 1.5rem;
+}
+.card-2 .primary-part .part-1 p{
+  width: 80%;
+  font-size: 1rem;
+}
+.card-2 .primary-part .part-1 a{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.arrow{
+  width: 1.1rem !important;
+}
+.review{
+  margin-top: 2rem;
+  width: 50%;
+  background-color: white;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0px 0px 7px 5px rgba(207, 207, 214, 0.4);
+}
+
+.review-author img{
+  width: 2.5rem !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.author-details h3{
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem ;
+
+}
+.author-details p{
+  width: 100% !important;
+  font-size: 0.65rem !important;
+  line-height: 1rem ;
+
+}
+.review-author{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.early-access{
+  background-color: var(--Desaturated-Blue);
+  width: 100%;
+  padding: 5rem 3.5rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.early-access .part-1{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.early-access .part-1 h2{
+  color: white;
+  font-size: 2rem;
+  
+}
+.early-access .part-1 p{
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.early-access .part-2{
+  padding-left: 2rem;
+}
+.get-started-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.get-started-footer input{
+  width: 30rem;
+  height: 3rem;
+}
+
+.footer{
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  padding: 7rem 3.5rem 4rem 3.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 20rem;
+}
+.footer-logo{
+  width: 10rem;
+}
+.footer-left span{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.phone-number{
+  margin-top: 1rem;
+}
+.footer-right{
+  margin-top: 4.5rem;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  opacity: 0.95;
+}
+.part-3 .icons{
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
