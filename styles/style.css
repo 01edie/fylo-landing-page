@@ -68,6 +68,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.header-left img{
+  width: 10rem;
+}
 .header .header-right{
   display: flex;
   gap: 2.5rem;
@@ -109,6 +112,11 @@ a {
   -o-border-radius: 5px;
   padding: 0rem 1.5rem;
 }
+.get-started input:hover{
+  border: 1px solid purple;
+  outline: none;
+  
+}
 .get-started button{
   color: white;
   background-color: var(--Bright-Blue);
@@ -123,6 +131,10 @@ a {
   font-size: 1rem;
   /*font-weight: 500;
   */box-shadow:  2px 4px 8px 1px rgba(93, 120, 240, 0.3);
+}
+.get-started button:hover{
+  background-color: hsl(224, 90%, 50%);
+  cursor: pointer;
 }
 
 .card-2{
@@ -159,10 +171,25 @@ a {
   width: 80%;
   font-size: 1rem;
 }
-.card-2 .primary-part .part-1 a{
+
+.link-work{
+  color: var(--Moderate-Cyan);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.link-work:hover{
+  opacity: 0.75;
+}
+.link-work-text{
   display: flex;
   align-items: center;
   gap: 0.4rem;
+
+}
+.link-work-hr{
+  width: 100%;
+  
 }
 .arrow{
   width: 1.1rem !important;
@@ -183,6 +210,7 @@ a {
 
 .review-author img{
   width: 2.5rem !important;
+  height: 2.5rem !important;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -270,8 +298,17 @@ a {
   align-items: center;
   gap: 1rem;
 }
+
 .phone-number{
   margin-top: 1rem;
+}
+.phone-number:hover{
+  color: var(--Desaturated-Blue);
+  cursor: pointer;
+}
+.email:hover{
+  color: var(--Desaturated-Blue);
+  cursor: pointer;
 }
 .footer-right{
   margin-top: 4.5rem;
@@ -281,11 +318,167 @@ a {
   justify-content: space-around;
   opacity: 0.95;
 }
+.footer-right a{
+  color: white;
+}
+.footer-right a:hover{
+  color: var(--Desaturated-Blue);
+}
 .part-3 .icons{
   display: flex;
   gap: 1rem;
 }
+.part-3 img{
+  height: 1.5rem;
+}
+.part-3 img:hover{
+  background-color: var(--Desaturated-Blue);
+}
 
 
+/* media queries */
+@media(max-width:1200px){
+  html{
+    font-size: 14px;
+  }
+}
 
+@media(max-width:991px){
+  html{
+    font-size: 16px;
+  }
+  .card-1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-1 .primary-part{
+    width: 75%;
+    text-align: center;
+    align-items: center;
 
+  }
+  .card-1 img{
+    padding-top: 4rem;
+    width: 90%;
+  }
+  .card-2 .primary-part{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-2 .primary-part .part-1{
+    width: 75%;
+    text-align: center;
+    align-items: center;
+
+}
+.card-2 .primary-part img:not(.arrow, .review-dp){
+  padding-top: 4rem;
+  width: 90%;
+
+}
+.review{
+  width: 75%;
+}
+.review .review-author img{
+  padding: 0;
+}
+.early-access{
+  flex-direction: column;
+  align-items: center;
+}
+.early-access .part-1{
+  width: 75%;
+  text-align: center;
+}
+.early-access .part-2{
+  padding-left: 0;
+}
+.early-access .part-2 form{
+  
+  align-items: center;
+}
+.footer{
+  flex-direction: column;
+}
+.footer-right{
+  justify-content: flex-start;
+  gap: 7rem;
+  flex-wrap: wrap;
+}
+}
+@media(max-width:768px){
+  .get-started{
+    flex-direction: column;
+    gap: 0.65rem !important;
+    width: 100%;
+    align-items: center;
+
+  }
+  .get-started input,button{
+    width: 100% !important;
+  }
+  .early-access .part-2{
+    width: 90%;
+  }
+  .get-started-footer{
+    width: 100%;
+  }
+  .review{
+    width: 85%;
+  }
+}
+
+@media(max-width:576px){
+  html{
+    font-size: 12px;
+  }
+  .header .header-right{
+    gap: 1.5rem;
+  }
+  .footer-right{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-right .part-3 .icons{
+    justify-content: center;
+  }
+  .footer-right{
+    margin-top: 2.5rem;
+  }
+  .card-1 .primary-part{
+    width: 90%;
+  }
+  .card-2-desktop-bg{
+    display: none;
+  }
+  .card-2-mobile-bg{
+    display: block;;
+  }
+  .card-2 .primary-part .part-1{
+    width: 90%;
+}
+.early-access .part-1{
+  width: 90%;
+}
+.review{
+  width: 90%;
+}
+.header{
+  padding: 0rem 2rem;
+}
+.card-1{
+  padding: 0rem 2rem;
+}
+.card-2 .primary-part{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.early-access{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.footer{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+}
